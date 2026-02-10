@@ -1,0 +1,47 @@
+/* Контейнер на всю ширину */
+.banner-container {
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center;     /* Центрирует по вертикали (если нужно) */
+    width: 100%;
+    overflow: hidden;        /* Чтобы ничего не вылезало за края */
+    background-color: #000;  /* Цвет фона, если баннер чуть короче экрана */
+}
+
+/* Настройки самого изображения */
+.main-banner {
+    max-width: 100%;         /* Баннер не будет шире экрана */
+    height: auto;            /* Пропорции сохранятся автоматически */
+    display: block;
+}
+/* Главный контейнер для всей страницы */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Выстраивает элементы вертикально (друг под другом) */
+    align-items: center;    /* Центрирует всё по горизонтали */
+    background-color: #000; /* Черный фон как на макете */
+    min-height: 100vh;
+}
+
+/* Стили для баннера */
+.main-banner {
+    width: 100%;            /* Растягиваем на всю ширину мобильного экрана */
+    max-width: 450px;       /* Ограничиваем ширину для ПК, чтобы не был гигантским */
+    height: auto;           /* Сохраняем пропорции */
+    display: block;
+}
+
+/* Стили для кнопки */
+.contact-button {
+    margin-top: 20px;       /* Отступ от баннера */
+    padding: 15px 30px;
+    background-color: #ffcc00; /* Желтый цвет как на скрине */
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;    /* Закругленные края */
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
